@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="with=device-width , initial-scale=1.0">
+        <title>Website Design for University</title>
+        <link rel="stylesheet" href="style.CSS">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,400;1,100;1,200;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- the main page -->
+        <section class="sub-header">
+            <nav>
+                <a href="index.HTML"><img src="image/logo.png" alt=""></a>
+                <div class="nav-link" id="navLink">
+                    <!-- navigation close icon -->
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <!-- navigation bar -->
+                        <li><a href="index.HTML">Home</a></li>
+                        <li><a href="about.HTML">About</a></li>
+                        <li><a href="course.HTML">Course</a></li>
+                        <li><a href="blog.HTML">Blog</a></li>
+                        <li><a href="contact.HTML">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- navigation bar icon -->
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+            <h1>Contact Us</h1>
+        </section>
+        <!-- Contact Us -->
+        <section class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127482.66722784778!2d101.61694948774326!3d3.138674968847012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc362abd08e7d3%3A0x232e1ff540d86c99!2sKuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1625936411784!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+            <section class="contact-us">
+                <div class="row">
+                    <div class="contact-col">
+                        <div>
+                            <i class="fa fa-home"></i>
+                            <span>
+                                <h5>ABCD buildings, 12345 Street</h5>
+                                <p>Kuala Lumpur, Kuala Lumpur</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <span>
+                                <h5>(+60) 102 34567</h5>
+                                <p>Everyday, 9AM to 5PM</p>
+                            </span>
+                        </div>
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <span>
+                                <h5>bac@gmail.edu.my</h5>
+                                <p>Email Us On</p>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="contact-col">
+                        <form action="">
+                            <input type="text" placeholder="Enter Your Name" required>
+                            <input type="email" placeholder="Email" required>
+                            <input type="text" placeholder="Enter Your Subject" required>
+                            <textarea rows="10" placeholder="Message"></textarea>
+                            <button type="submit" class="visit-btn blue-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <!-- Footer -->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius magni dolorum sunt voluptate voluptatum quod quisquam a. <br> Recusandae nulla quae expedita corporis, fugit dolor iure in hic vel autem repellat.</p>
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Made by william for learning purpose</p>
+        </section>
+        <!-- Javascript for Toggle the menu bar in 700px -->
+        <script>
+        var navLink = document.getElementById("navLink");
+            function showMenu(){
+                navLink.style.right = "0";
+                }
+            function hideMenu(){
+                navLink.style.right = "-165px";
+                }
+        </script>
+    </body>
+</html>
